@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | 3-column preview card component</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            deca: ['Lexend Deca', 'serif'],
+            big: ['Big Shoulders Display', 'sans-serif']
+          },
+          colors: {
+            brightOrange: 'hsl(31, 77%, 52%)',
+            darkCyan: 'hsl(184, 100%, 22%)',
+            veryDarkCyan: 'hsl(179, 100%, 13%)',
+            transparentWhite: 'hsla(0, 0%, 100%, 0.75)',
+            veryLightGray: 'hsl(0, 0%, 95%)',
+          }
+        }
+      }
+    }
+  </script>
+
+  
+</head>
+<body class="bg-veryLightGray font-deca flex items-center justify-center min-h-dvh">
+
+  <main class="flex flex-wrap items-center w-[65em] overflow-y-hidden rounded-lg my-[4rem] mx-[1rem]">
+
+    <div class="basis-full grow shrink-0 md:basis-72  bg-brightOrange p-14">
+      <img src="images/icon-sedans.svg" alt="sedan car icon">
+
+      <h1 class="text-5xl uppercase font-bold font-big text-veryLightGray mt-8">Sedans</h1>
+
+      <p class="text-base text-transparentWhite font-normal mt-8 leading-6">Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip.</p>
+
+      <button class="bg-white mt-28 text-base px-8 py-2.5 text-brightOrange rounded-3xl border-none hover:ring-2 ring-white transition duration-300 ease hover:bg-inherit hover:text-transparentWhite">
+        Learn More
+      </button>
+    </div>
+
+    <div class="basis-full grow shrink-0 md:basis-72 bg-darkCyan p-14">
+      <img src="images/icon-suvs.svg" alt="suv car icon">
+
+      <h1 class="text-5xl uppercase font-bold font-big text-veryLightGray mt-8" >SUVs</h1>
+
+      <p class="text-base text-transparentWhite font-normal mt-8 leading-6">Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation and off-road adventures.</p>
+
+      <button class="bg-white mt-28 text-base px-8 py-2.5 text-darkCyan rounded-3xl border-none hover:ring-2 ring-white transition duration-300 ease hover:bg-inherit hover:text-transparentWhite">
+        Learn More
+      </button>
+    </div>
+
+    <div class="basis-full grow shrink-0 md:basis-72 bg-veryDarkCyan p-14">
+      
+      <img src="images/icon-luxury.svg" alt="luxury car icon">
+
+      <h1 class="text-5xl uppercase font-bold font-big text-veryLightGray mt-8">Luxury</h1>
+
+      <p class="text-base text-transparentWhite font-normal mt-8 leading-6">Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury rental and arrive in style.</p>
+
+      <button class="bg-white mt-28 text-base px-8 py-2.5 text-veryDarkCyan rounded-3xl border-none hover:ring-2 ring-white transition duration-300 ease hover:bg-inherit hover:text-transparentWhite">
+        Learn More
+      </button>
+    </div>
+
+  </main>
+
+</body>
+</html>
+
+<!-- https://github.com/Orekihotarou-k/Front-end-mentor-exercise-10/blob/main/index.html -->
